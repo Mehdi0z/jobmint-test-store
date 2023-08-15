@@ -7,16 +7,41 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Welcome to our store",
             "text_alignment": "center",
             "color_scheme": "accent-2",
             "link": ""
           }
+        },
+        "acb0b95e-091c-4d85-84a9-94f124b9a8bf": {
+          "type": "Countdown",
+          "settings": {
+            "text": "Welcome to our store",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": "",
+            "deadline": "August 14, 2023 23:59:00 UTC",
+            "countdown_error_message": "Time's Up"
+          }
+        },
+        "9d5a652f-549e-46ba-825c-f6dae662c988": {
+          "type": "Countdown",
+          "settings": {
+            "text": "Welcome to our store",
+            "text_alignment": "center",
+            "color_scheme": "accent-1",
+            "link": "",
+            "deadline": "August 17, 2023 23:59:00 UTC",
+            "countdown_error_message": "Time's Up"
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "acb0b95e-091c-4d85-84a9-94f124b9a8bf",
+        "9d5a652f-549e-46ba-825c-f6dae662c988"
       ],
       "settings": {
       }
