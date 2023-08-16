@@ -296,5 +296,9 @@
 
     <script src="{{ 'additional-banner-video-script.js ' | asset_url }}" defer></script>
     <script src="{{ 'announcement-bar-countdown.js ' | asset_url }}" defer></script>
+
+    {%- if settings.cart_type == 'drawer' or template.name == 'product' -%}
+      <script src="{{ 'product-form.js' | asset_url }}" defer></script>
+    {%- endif -%}
   </body>
 </html>
