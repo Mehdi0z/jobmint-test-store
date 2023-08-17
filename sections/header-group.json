@@ -7,7 +7,6 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Welcome to our store",
             "text_alignment": "center",
@@ -17,6 +16,7 @@
         },
         "acb0b95e-091c-4d85-84a9-94f124b9a8bf": {
           "type": "Countdown",
+          "disabled": true,
           "settings": {
             "text": "Welcome to our store",
             "text_alignment": "center",
@@ -28,6 +28,7 @@
         },
         "9d5a652f-549e-46ba-825c-f6dae662c988": {
           "type": "Countdown",
+          "disabled": true,
           "settings": {
             "text": "Welcome to our store",
             "text_alignment": "center",
