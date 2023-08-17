@@ -14,11 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         console.log(deadline)
 
-        if ( countdownTimeSpan) {
+        if (countdownTimeSpan) {
             const deadlineUtc = new Date(deadline);
-            const countdownOffset = deadlineUtc.getTimezoneOffset() * 60000; // Convert to milliseconds
+            // offset between actual machine time & deadline utc
+            const countdownOffset = -deadlineUtc.getTimezoneOffset() * 60000; // Convert to milliseconds
         
             function updateCountdown() {
+                // now utc
                 const nowUtc = new Date();
                 const now = nowUtc.getTime() + countdownOffset;
                 const timeRemaining = deadlineUtc - now;
@@ -29,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
                     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
         
-                countdownTimeSpan.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                    countdownTimeSpan.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
                 } else {
-                countdownTimeSpan.textContent = errorMessage;
+                    countdownTimeSpan.textContent = errorMessage;
                 }
             }
         
